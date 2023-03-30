@@ -6,7 +6,7 @@
   .left {
     min-width: 300px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(225, 225, 225, 0.35);
     backdrop-filter: blur(55px);
     padding: 10px;
 
@@ -37,6 +37,10 @@
   .center {
     padding: 10px;
 
+    .center-header {
+      background-color: azure;
+    }
+
     .input-container {
       position: fixed;
       bottom: 0;
@@ -45,5 +49,7 @@
 
   .right {
     background-color: rgb(187, 127, 255);
+    transition: width 2s ease-in-out;
+    width: 100%;
   }
 }

@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class MainComponent {
   contacts = [1, 2, 3, 4, 5];
   showCenter = true;
+  showRight = false;
+  showProfile() {
+    this.showRight = !this.showRight;
+  }
 }
