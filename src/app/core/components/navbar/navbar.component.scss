@@ -1,6 +1,5 @@
 .example-container {
   height: 100vh;
-  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .botm {
@@ -14,9 +13,10 @@
 
 .draw:hover {
   .lin {
+    width: 140px;
     .colapse {
       margin: 0px 10px;
-      display: block;
+      display: inline;
     }
   }
 }
