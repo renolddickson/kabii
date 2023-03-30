@@ -32,7 +32,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -75,6 +75,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatAutocompleteModule,
     MatBadgeModule,
     MatDividerModule,
+    BrowserAnimationsModule
   ],
   exports: [
     MatButtonModule,
@@ -112,6 +113,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatAutocompleteModule,
     MatBadgeModule,
     MatDividerModule,
+<<<<<<< HEAD
   ],
+=======
+    BrowserAnimationsModule
+  ]
+>>>>>>> dce87f2fd0756674269723f47edea1ba97fd4212
 })
 export class MaterialModule {}

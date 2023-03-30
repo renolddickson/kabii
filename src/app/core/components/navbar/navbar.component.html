@@ -1,2 +1,16 @@
-<p>navbar works!</p>
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer fxLayout="column" fxLayoutAlign="space-between center" mode="side" disableClose="true" opened="true">
+    <div fxLayout="column">
+      <a mat-icon-button><mat-icon>dashboard</mat-icon></a>
+      <a mat-icon-button routerLink="/app/table"><mat-icon>forum</mat-icon></a>
+      <a mat-icon-button routerLink="/app/table"><mat-icon>diversity_2</mat-icon></a>
+      <a mat-icon-button routerLink="/app/applicants"><mat-icon>notifications</mat-icon></a>
+      <a mat-icon-button routerLink="/app/todo-list"><mat-icon>inventory_2</mat-icon></a>
+    </div>
+    <div fxLayout="column" class="botm">
+      <a mat-icon-button routerLink="/app/table"><mat-icon>dark_mode</mat-icon></a>
+      <a mat-icon-button routerLink="/app/table"><mat-icon>settings</mat-icon></a>
+    </div>
+  </mat-drawer>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

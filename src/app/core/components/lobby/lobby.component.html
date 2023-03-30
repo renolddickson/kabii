@@ -1,5 +1,41 @@
-<div class="main" fxLayout="row" fxLayoutAlign="center center">
-  <div class="main1">
-    .
+<div class="main" fxLayoutAlign="center center">
+  <div class="main1" fxLayout="column" fxFlex="40%">
+    <h2>Login </h2>
+    <form [formGroup]="employeedetail">
+      <div class="o1" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div class="one" fxFlex="50%" fxLayout="row" fxLayout.lt-md="column">
+          <label fxFlex="50%">First Name: </label>
+          <mat-form-field class="inp" fxFlex="50%" appearance="outline">
+            <input matInput formControlName="firstname" />
+            <mat-error
+              *ngIf="employeedetail.get('firstname')?.hasError('pattern')"
+            >
+              Please enter a valid name
+            </mat-error>
+            <mat-error
+              *ngIf="employeedetail.get('firstname')?.hasError('required')"
+            >
+              FirstName is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <!-- <div class="two" fxFlex="50%" fxLayout="row" fxLayout.lt-md="column">
+          <label fxFlex="50%">Last Name: </label>
+          <mat-form-field class="inp" fxFlex="50%" appearance="outline">
+            <input matInput formControlName="lastname" />
+            <mat-error
+              *ngIf="employeedetail.get('lastname')?.hasError('pattern')"
+            >
+              Please enter a valid last name
+            </mat-error>
+            <mat-error
+              *ngIf="employeedetail.get('lastname')?.hasError('required')"
+            >
+              lastName is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div> -->
+      </div>
+    </form>
   </div>
 </div>
