@@ -30,6 +30,7 @@ $kabii-theme: mat.define-light-theme((color: (primary: $kabii-primary,
 @include mat.all-component-themes($kabii-theme);
 
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 body {
   background-color: #f5f3ff;
 }
@@ -43,3 +44,12 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+=======
+
+body{
+  background-color: #f5f3ff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+>>>>>>> 3bfa537d34143569fbba1401ac178dafa2775443
