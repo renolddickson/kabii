@@ -8,7 +8,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LobbyComponent, NavbarComponent, MainComponent],
-  imports: [CommonModule, MaterialModule, ReactiveFormsModule],
-})
+  imports: [CommonModule, MaterialModule, ReactiveFormsModule]})
 
 export class CoreModule {}
