@@ -44,10 +44,10 @@
       </mat-list-item>
     </mat-nav-list>
     <mat-nav-list class="botm">
-      <mat-list-item class="lin">
+      <mat-list-item class="lin" (click)="modToggle(mod)">
         <div fxLayout="row" fxLayoutAlign="start center">
-          <mat-icon mat-list-icon>dark_mode</mat-icon>
-          <span class="colapse">Dark Mode</span>
+          <mat-icon mat-list-icon>{{mod}}_mode</mat-icon>
+          <span class="colapse">{{modc}} Mode</span>
         </div>
       </mat-list-item>
       <mat-list-item class="lin">

@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   showFiller = false;
+  mod = 'dark';
+  modc= 'Dark';
+
+  modToggle(m: string) {
+    if(m==='dark') {
+      this.mod = 'light';
+      this.modc = 'Light';
+    } else {
+      this.mod = 'dark';
+      this.modc = 'Dark';
+    }
+  }
 }
