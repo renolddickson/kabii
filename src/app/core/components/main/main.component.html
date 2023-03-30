@@ -18,10 +18,16 @@
       </div>
     </div>
   </div>
-  <div class="center" fxFlex="50%">
-    <mat-form-field appearance="outline">
-      <input matInput placeholder="label" value="value">
-    </mat-form-field>
+  <div class="center" fxFlex="50%" fxLayout="column" fxLayoutAlign="space-between stretch">
+    <div class="center-header">
+      Heading here
+    </div>
+    <div class="input-message" fxLayout="row" fxLayoutAlign="space-between center">
+      <mat-form-field appearance="outline" class="mat-input" fxFlex="90%">
+        <input matInput placeholder="write you code...">
+      </mat-form-field>
+      <button mat-fab><mat-icon>send</mat-icon></button>
+    </div>
   </div>
   <div class="right" fxFlex="25%">'</div>
 </div>

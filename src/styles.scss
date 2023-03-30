@@ -50,3 +50,7 @@ body {
 .mdc-list-item.mdc-list-item--with-one-line {
   padding: 5px;
 }
+
+.mat-mdc-form-field-bottom-align::before {
+  display: none !important;
+}
