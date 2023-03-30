@@ -1,0 +1,44 @@
+.main-container {
+  min-height: 100vh;
+
+  .left {
+    background: url(../../../../assets/full.jpg) no-repeat center;
+    background-size: cover;
+
+    .left-head {
+      padding: 20px;
+    }
+
+    .contact-profile {
+      padding-block: 10px;
+    }
+
+    .dp-img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .label {
+      height: 100%;
+    }
+
+    .contact-profile:hover {
+      background: rgba(255, 255, 255, 0.123);
+      cursor: pointer;
+    }
+
+    .blur {
+      width: inherit;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(25px);
+    }
+  }
+
+  .center {}
+
+  .right {
+    background-color: rgb(187, 127, 255);
+  }
+}

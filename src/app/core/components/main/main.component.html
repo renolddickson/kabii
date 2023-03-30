@@ -1,5 +1,27 @@
 <div class="main-container" fxLayout="row">
-  <div class="left">'</div>
-  <div class="center">'</div>
-  <div class="right">'</div>
+  <div class="left" fxLayout="column" fxFlex="25%" fxLayoutGap="20px">
+    <div class="blur">
+      <div class="left-head" fxLayout="row" fxLayoutGap="10px">
+        <mat-icon>chat</mat-icon>
+        <h3>your chats</h3>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="contact-profile" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="10px"
+        *ngFor="let profile of contacts">
+        <div class="profile" fxFlex="15%">
+          <img src="../../../../assets/dp.jpg" class="dp-img" alt="dp">
+        </div>
+        <div class="label" fxLayout="column" fxLayoutAlign="space-around strat">
+          <div class="name">Smart</div>
+          <div class="status">Hi there i am using kabii</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center" fxFlex="50%">
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="label" value="value">
+    </mat-form-field>
+  </div>
+  <div class="right" fxFlex="25%">'</div>
 </div>
