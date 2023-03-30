@@ -113,11 +113,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatAutocompleteModule,
     MatBadgeModule,
     MatDividerModule,
-<<<<<<< HEAD
-  ],
-=======
     BrowserAnimationsModule
   ]
->>>>>>> dce87f2fd0756674269723f47edea1ba97fd4212
 })
 export class MaterialModule {}

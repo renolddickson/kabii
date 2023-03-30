@@ -1,16 +1,62 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer fxLayout="column" fxLayoutAlign="space-between center" mode="side" disableClose="true" opened="true">
-    <div fxLayout="column">
-      <a mat-icon-button><mat-icon>dashboard</mat-icon></a>
-      <a mat-icon-button routerLink="/app/table"><mat-icon>forum</mat-icon></a>
-      <a mat-icon-button routerLink="/app/table"><mat-icon>diversity_2</mat-icon></a>
-      <a mat-icon-button routerLink="/app/applicants"><mat-icon>notifications</mat-icon></a>
-      <a mat-icon-button routerLink="/app/todo-list"><mat-icon>inventory_2</mat-icon></a>
-    </div>
-    <div fxLayout="column" class="botm">
-      <a mat-icon-button routerLink="/app/table"><mat-icon>dark_mode</mat-icon></a>
-      <a mat-icon-button routerLink="/app/table"><mat-icon>settings</mat-icon></a>
-    </div>
+  <mat-drawer #drawer class="draw" fxLayout="column" fxLayoutAlign="space-between center" mode="side"
+    disableClose="true" opened="true">
+    <mat-nav-list fxLayout="column">
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>
+            dashboard
+          </mat-icon>
+          <span class="colapse">Menu</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>
+            forum
+          </mat-icon>
+        <span class="colapse">Chat</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>
+            diversity_2
+          </mat-icon>
+        <span class="colapse">Group</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>
+            notifications
+          </mat-icon>
+        <span class="colapse">Notification</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>
+            inventory_2
+          </mat-icon>
+        <span class="colapse">Files</span>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list fxLayout="column" class="botm">
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>dark_mode</mat-icon>
+          <span class="colapse">Dark Mode</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item class="lin">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon mat-list-icon>settings</mat-icon>
+          <span class="colapse">settings</span>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
   </mat-drawer>
   <router-outlet></router-outlet>
 </mat-drawer-container>
