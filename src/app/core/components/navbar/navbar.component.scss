@@ -8,6 +8,19 @@
   bottom: 0;
 }
 
+.colapse {
+  display: none;
+}
+
+.draw:hover {
+  .lin {
+    .colapse {
+      margin: 0px 10px;
+      display: block;
+    }
+  }
+}
+
 @media only screen and (max-height: 340px) {
   .botm {
     position: relative;
