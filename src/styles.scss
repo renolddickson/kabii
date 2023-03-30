@@ -54,3 +54,12 @@ body {
 .mat-mdc-form-field-bottom-align::before {
   display: none !important;
 }
+
+.mat-mdc-text-field-wrapper {
+  background-color: rgba(250, 235, 215, 0.377) !important;
+  border-radius: 100px !important;
+}
+
+.mat-form-field-appearance-outline {
+  border: none !important;
+}

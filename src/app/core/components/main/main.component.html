@@ -1,33 +1,31 @@
 <div class="main-container" fxLayout="row">
-  <div class="left" fxLayout="column" fxFlex="25%" fxLayoutGap="20px">
-    <div class="blur">
-      <div class="left-head" fxLayout="row" fxLayoutGap="10px">
-        <mat-icon>chat</mat-icon>
-        <h3>your chats</h3>
+  <div class="left" fxLayout="column" fxFlex.lt-md="100%" fxLayoutGap="20px">
+    <div class="left-head" fxLayout="row" fxLayoutGap="10px">
+      <mat-icon>chat</mat-icon>
+      <h3>your chats</h3>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="contact-profile" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px"
+      *ngFor="let profile of contacts">
+      <div class="profile" fxFlex="15%">
+        <img src="../../../../assets/dp.jpg" class="dp-img" alt="dp">
       </div>
-      <mat-divider></mat-divider>
-      <div class="contact-profile" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="10px"
-        *ngFor="let profile of contacts">
-        <div class="profile" fxFlex="15%">
-          <img src="../../../../assets/dp.jpg" class="dp-img" alt="dp">
-        </div>
-        <div class="label" fxLayout="column" fxLayoutAlign="space-around strat">
-          <div class="name">Smart</div>
-          <div class="status">Hi there i am using kabii</div>
-        </div>
+      <div class="label" fxLayout="column" fxLayoutAlign="space-around strat">
+        <div class="name">Smart</div>
+        <div class="status">Hi there i am using kabii</div>
       </div>
     </div>
   </div>
-  <div class="center" fxFlex="50%" fxLayout="column" fxLayoutAlign="space-between stretch">
+  <div class="center" fxFlex=100% fxHide.lt-md="showCenter" fxLayout="column" fxLayoutAlign="space-between stretch">
     <div class="center-header">
       Heading here
     </div>
-    <div class="input-message" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="input-message" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
       <mat-form-field appearance="outline" class="mat-input" fxFlex="90%">
         <input matInput placeholder="write you code...">
       </mat-form-field>
       <button mat-fab><mat-icon>send</mat-icon></button>
     </div>
   </div>
-  <div class="right" fxFlex="25%">'</div>
+  <div class="right" *ngIf="false" fxFlex="25%">'</div>
 </div>
