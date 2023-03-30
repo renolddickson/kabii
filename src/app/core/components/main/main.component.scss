@@ -36,7 +36,14 @@
     }
   }
 
-  .center {}
+  .center {
+    padding: 10px;
+
+    .input-container {
+      position: fixed;
+      bottom: 0;
+    }
+  }
 
   .right {
     background-color: rgb(187, 127, 255);
