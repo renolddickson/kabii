@@ -35,15 +35,9 @@
   }
 
   .center {
-    padding: 10px;
 
     .center-header {
-      background-color: azure;
-    }
-
-    .input-container {
-      position: fixed;
-      bottom: 0;
+      background-color: #17212b;
     }
   }
 
@@ -52,4 +46,20 @@
     transition: width 2s ease-in-out;
     width: 100%;
   }
+}
+
+.type-area {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+.type-area:focus {
+  outline: none;
+}
+
+.input-message {
+  background: #17212b;
+  padding: 10px;
 }
