@@ -10,7 +10,7 @@
           <span class="colapse">Menu</span>
         </div>
       </mat-list-item>
-      <mat-list-item>
+      <mat-list-item routerLink="/nav/main">
         <div fxLayout="row" fxLayoutAlign="start center">
           <mat-icon mat-list-icon>
             forum
@@ -18,7 +18,7 @@
           <span class="colapse">Chat</span>
         </div>
       </mat-list-item>
-      <mat-list-item>
+      <mat-list-item routerLink="/nav/group">
         <div fxLayout="row" fxLayoutAlign="start center">
           <mat-icon mat-list-icon>
             diversity_2
@@ -58,5 +58,7 @@
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>
-  <router-outlet></router-outlet>
+  <mat-drawer-content class="content">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
 </mat-drawer-container>

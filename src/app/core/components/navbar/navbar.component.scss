@@ -7,18 +7,21 @@
   bottom: 0;
 }
 
-.colapse {
-  display: none;
-}
+  .colapse {
+    display: none;
+  }
 
 .draw:hover {
   .lin {
-    width: 140px;
     .colapse {
       margin: 0px 10px;
-      display:  block;
+      display:  inline;
     }
   }
+}
+
+.content {
+  margin-left: 35px !important;
 }
 
 @media only screen and (max-height: 340px) {
