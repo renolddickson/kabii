@@ -1,59 +1,59 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="draw" fxLayout="column" fxLayoutAlign="space-between center" mode="side"
+<mat-drawer-container class="example-container" autosize [hasBackdrop]="showLabel">
+  <mat-drawer #drawer (mouseover)="showLabel=true" (mouseout)="showLabel=false" fxLayout="column" fxLayoutAlign="space-between center" [mode]="showLabel? 'over': 'side'"
     disableClose="true" opened="true">
-    <mat-nav-list class="lin">
+    <mat-nav-list>
       <mat-list-item>
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>
             dashboard
           </mat-icon>
-          <span class="colapse">Menu</span>
+          <span [fxShow]="showLabel">Menu</span>
         </div>
       </mat-list-item>
       <mat-list-item routerLink="/nav/main">
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>
             forum
           </mat-icon>
-          <span class="colapse">Chat</span>
+          <span [fxShow]="showLabel">Chat</span>
         </div>
       </mat-list-item>
       <mat-list-item routerLink="/nav/group">
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>
             diversity_2
           </mat-icon>
-          <span class="colapse">Group</span>
+          <span [fxShow]="showLabel">Group</span>
         </div>
       </mat-list-item>
       <mat-list-item>
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>
             notifications
           </mat-icon>
-          <span class="colapse">Notification</span>
+          <span [fxShow]="showLabel">Notification</span>
         </div>
       </mat-list-item>
       <mat-list-item>
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>
             inventory_2
           </mat-icon>
-          <span class="colapse">Files</span>
+          <span [fxShow]="showLabel">Files</span>
         </div>
       </mat-list-item>
     </mat-nav-list>
     <mat-nav-list class="botm">
       <mat-list-item class="lin" (click)="modToggle(mod)">
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>{{mod}}_mode</mat-icon>
-          <span class="colapse">{{modc}} Mode</span>
+          <span [fxShow]="showLabel">{{modc}} Mode</span>
         </div>
       </mat-list-item>
       <mat-list-item class="lin">
-        <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
           <mat-icon mat-list-icon>settings</mat-icon>
-          <span class="colapse">settings</span>
+          <span [fxShow]="showLabel">settings</span>
         </div>
       </mat-list-item>
     </mat-nav-list>
