@@ -49,6 +49,7 @@
 }
 
 .type-area {
+  background-color: transparent;
   border: none;
   border-radius: 50px;
   padding: 10px;
@@ -62,4 +63,10 @@
 .input-message {
   background: #17212b;
   padding: 10px;
+}
+
+.input-icon {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
 }

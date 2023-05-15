@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MainComponent } from './main.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 describe('MainComponent', () => {
   let component: MainComponent;
@@ -8,9 +10,9 @@ describe('MainComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainComponent ]
-    })
-    .compileComponents();
+      declarations: [MainComponent],
+      imports: [MatIconModule, MatDividerModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MainComponent);
     component = fixture.componentInstance;
@@ -19,5 +21,11 @@ describe('MainComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('showProfile', () => {
+    expect(component.showRight).toEqual(false);
+    component.showProfile();
+    expect(component.showProfile).toBeDefined;
+    expect(component.showRight).toEqual(true);
   });
 });

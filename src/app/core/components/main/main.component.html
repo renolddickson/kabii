@@ -22,9 +22,10 @@
       <img src="../../../../assets/dp.jpg" height="50px" style="border-radius: 50%;" width="50px" alt="dp"
         (click)="showProfile()">
     </div>
-    <div class="input-message" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+    <div class="input-message" fxLayout="row" fxLayoutAlign="space-between center">
       <input placeholder="write you code..." class="type-area">
-      <button mat-fab><mat-icon>send</mat-icon></button>
+      <button mat-button class="input-icon"><mat-icon>face</mat-icon></button>
+      <button mat-button><mat-icon class="input-icon">send</mat-icon></button>
     </div>
   </div>
   <div class="right" *ngIf="showRight" fxHide.lt-md="true" fxFlex="25%">'</div>
